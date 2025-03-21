@@ -1,0 +1,145 @@
+:root {
+	--accent-text-color: #FFCC00;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	padding: 0;
+	height: 100%;
+}
+body {
+	margin: 0;
+	min-height: 100%;
+	display: flex;
+	color: white;
+}
+
+main {
+	background-color: #000000;
+	padding: 24px;
+	padding-bottom: 60px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.header-text {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 125%;
+	text-align: center;
+}
+
+.desktop-only {
+	display: none;
+}
+
+@media (min-width: 769px) {
+	.desktop-only {
+		display: block;
+	}
+}
+
+@media (min-width: 600px) {
+	.header-text {
+		font-size: 51px;
+	}
+}
+
+.accent-text { 
+	color: var(--accent-text-color);
+	font-style: italic;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.feature-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 24px;
+	margin-bottom: 24px;
+}
+
+.feature-card {
+	display: flex;
+	flex-direction: column;
+	padding-inline: 24px;
+	padding-block: 32px;
+	box-shadow: -3px 3px 0 #c7c7c7;
+	flex: 1 1 51%;
+	aspect-ratio: 607/238;
+	max-width: 607px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 12px;
+	background-color: rgba(0,0,0,.5);
+  background-blend-mode: multiply;
+}
+
+@media (min-width: 769px) {
+	.feature-card {
+		flex: 1 1 34%;
+	}
+}
+
+.feature-card--bottom-img {
+	background-position: bottom;
+}
+
+.feature-card__title {
+	font-weight: 700;
+	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.feature-card__content {
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+.feature-card__content--title {
+	color: var(--accent-text-color);
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+.feature-card__content--text {
+	margin: 0;
+}
+
+.explore-btn {
+	background-color: var(--accent-text-color);
+	color: black;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border: none;
+	border-radius: 1000px;
+	padding-inline: 24px;
+	padding-block: 16px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.right-chevron {
+	height: 14px;
+}
+
